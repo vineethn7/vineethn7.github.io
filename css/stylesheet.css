@@ -1,0 +1,59 @@
+html{
+  background: url("bg.jpg") no-repeat center center fixed ;
+  background-size: cover;
+  font-family: cursive;
+  height: 100%;
+}
+.container{
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  float:right;
+  margin:10px 10px;
+}
+.bar1,.bar2,.bar3{
+  width: 35px;
+  height: 5px;
+  background-color: #03A9F4;
+  opacity: 0.9;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.container:hover > div{
+background-color: #B3E5FC;
+}
+.change .bar1{
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+
+}
+.change .bar2{opacity:0}
+.change .bar3{
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+.copy-container{
+
+  padding:80px 100px;
+  float: right;
+  margin:0 auto;
+}
+.copy-container a{
+  color:#B3E5FC;
+  padding:0 10px;
+  float:right;
+}
+.copy-container a:hover{
+    color:#FDD023;
+    transition: all 0.5s ease-out;
+}
+.heading{
+  font-size: 45px;
+  color:#B3E5FC;
+
+}
+.title{
+  color:white;
+  text-align: right;
+  color:#FDD023;
+  font-style: italic;
+  opacity: 0.7;
+}

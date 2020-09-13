@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="text/css" href="stylesheet.css"></link>
-  <title>My Portfolio</title>
-</head>
-<body>
-  <header>
-    <div class="nav-bar">
-      <div class="header-logo">
-        <img src="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+      src="https://kit.fontawesome.com/9d1b671a40.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container" onclick="TOG(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
-      <div class="header-list">
-      <ul>
-        <li>Home</li>
-        <li>About Me</li>
-        <li>My Work</li>
-        <li>How to reach me!</li>
-      </ul>
+      <nav class="menu">
+        <div class="menu-list">
+          <ul>
+            <li class="current">home</li>
+            <li>about me</li>
+            <li>my work</li>
+            <li>how to reach me?</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="copy-container">
+        <h1 class="heading">Vineeth Ram Kumar</h1>
+        <p class="title">Full Stack Developer</p>
+        <a href="https://www.linkedin.com/in/vineeth-ram-kumar-nayakanti-venkat-b7702a17b/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://github.com/vineethn7" target="_blank"><i class="fab fa-github fa-2x" ></i></a>
+        <a href="https://www.facebook.com/vineethn7/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
       </div>
-    </div>
-  </header>
-  <main>
-
-  </main>
-  <footer>
-  </footer>
-</body>
+    </main>
+    <footer>
+    </footer>
+  </body>
+  <script type="text/javascript">
+    function TOG(x){
+      x.classList.toggle("change");
+    }
+  </script>
 </html>
