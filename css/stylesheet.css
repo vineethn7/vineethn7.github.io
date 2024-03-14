@@ -258,6 +258,7 @@ main {
         .projects .project6{
           grid-area: project6;
         }
+        
         .projects img {
           width: 100%;
           height: 250px;;
