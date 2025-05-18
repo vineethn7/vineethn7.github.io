@@ -1,3 +1,4 @@
+<!-- 
 <!DOCTYPE html>
 <html>
   <head>
@@ -62,5 +63,104 @@
       Copyright &copy; 2024
     </footer>
   </body>
+
   <script type="text/javascript" src="js/main.js"></script>
 </html>
+
+--->
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vineeth | Software Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            glass: 'rgba(255, 255, 255, 0.1)'
+          },
+          backdropBlur: {
+            'xl': '20px',
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-glass backdrop-blur-xl shadow-lg p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Vineeth</h1>
+    <nav class="space-x-4">
+      <a href="#about" class="hover:text-blue-400">About</a>
+      <a href="#projects" class="hover:text-blue-400">Projects</a>
+      <a href="#skills" class="hover:text-blue-400">Skills</a>
+      <a href="#contact" class="hover:text-blue-400">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center text-center p-6" id="hero">
+    <div>
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Venkat Vineeth Ram Kumar Nayakanti</h2>
+      <p class="text-xl md:text-2xl text-blue-300">Software Engineer</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="p-8 max-w-4xl mx-auto" id="about">
+    <h3 class="text-3xl font-semibold mb-4">About Me</h3>
+    <p class="text-lg leading-relaxed text-gray-300">
+      I’m a Software Engineer with hands-on experience developing scalable backend systems and data pipelines. I specialize in Python, Java, SQL, and cloud-native technologies like AWS and Azure. I’ve built enterprise applications, optimized ETL workflows, and contributed to high-impact projects at companies like Kalven Technologies and EPAM Systems. I’m passionate about clean code, automation, and transforming data into actionable insights.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="p-8 max-w-6xl mx-auto" id="projects">
+    <h3 class="text-3xl font-semibold mb-6">Projects</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-glass backdrop-blur-xl p-6 rounded-xl border border-gray-700 shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Project Title</h4>
+        <p class="text-gray-300">Project description goes here. You can edit this later with your own projects.</p>
+      </div>
+      <div class="bg-glass backdrop-blur-xl p-6 rounded-xl border border-gray-700 shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Project Title</h4>
+        <p class="text-gray-300">Another placeholder project card. Add your GitHub link and image if needed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="p-8 max-w-6xl mx-auto" id="skills">
+    <h3 class="text-3xl font-semibold mb-6">Skills</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+      <span class="bg-glass p-4 rounded-lg">Python</span>
+      <span class="bg-glass p-4 rounded-lg">Java</span>
+      <span class="bg-glass p-4 rounded-lg">SQL</span>
+      <span class="bg-glass p-4 rounded-lg">React</span>
+      <span class="bg-glass p-4 rounded-lg">Spring</span>
+      <span class="bg-glass p-4 rounded-lg">AWS</span>
+      <span class="bg-glass p-4 rounded-lg">Docker</span>
+      <span class="bg-glass p-4 rounded-lg">Airflow</span>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="p-8 max-w-4xl mx-auto" id="contact">
+    <h3 class="text-3xl font-semibold mb-4">Contact</h3>
+    <p class="text-gray-300 mb-2">Email: <a href="mailto:vineeth.nayakanti@gmail.com" class="text-blue-400 hover:underline">vineeth.nayakanti@gmail.com</a></p>
+    <p class="text-gray-300 mb-2">GitHub: <a href="https://github.com/vineethn7" class="text-blue-400 hover:underline" target="_blank">github.com/vineethn7</a></p>
+    <p class="text-gray-300">LinkedIn: <a href="https://www.linkedin.com/in/vineethn7/" class="text-blue-400 hover:underline" target="_blank">linkedin.com/in/vineethn7</a></p>
+  </section>
+
+  <footer class="text-center text-gray-500 py-4 mt-8 border-t border-gray-700">
+    &copy; 2025 Vineeth. All rights reserved.
+  </footer>
+</body>
+</html>
+
