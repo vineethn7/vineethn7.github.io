@@ -1,73 +1,3 @@
-<!-- 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script
-      src="https://kit.fontawesome.com/9d1b671a40.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body id="home">
-    <div class="overlay"></div>
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-      </div>
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-nav">
-          <li class="nav-item current">
-            <a href="index.html" class="nav-link">
-              home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">
-              about me
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="works.html" class="nav-link">
-              my work
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-              how to reach me!
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main id="home">
-      <div class="copy-container">
-        <h1 class="heading">Vineeth Nayakanti</h1>
-        <h2 class="title">Big Data Engineer</h2>
-        
-        <a href="https://www.linkedin.com/in/vnayakan/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="https://github.com/vineethn7" target="_blank"><i class="fab fa-github fa-2x" ></i></a>
-        <a href="https://www.facebook.com/vineethn7/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-      </div>
-    </main>
-    <footer id="main-footer">
-      Copyright &copy; 2024
-    </footer>
-  </body>
-
-  <script type="text/javascript" src="js/main.js"></script>
-</html>
-
---->
 
 <!DOCTYPE html>
 <html lang="en" class="dark">
@@ -82,109 +12,263 @@
       theme: {
         extend: {
           colors: {
-            glass: 'rgba(255, 255, 255, 0.1)'
+            glass: 'rgba(255, 255, 255, 0.1)',
+            glassLight: 'rgba(255, 255, 255, 0.15)',
+            glassLighter: 'rgba(255, 255, 255, 0.05)',
           },
           backdropBlur: {
-            'xl': '20px',
+            xl: '30px',
           },
-        }
-      }
+          boxShadow: {
+            glass: '0 4px 30px rgba(255, 255, 255, 0.1)',
+          },
+          fontFamily: {
+            sans: ['"Segoe UI"', 'Roboto', 'sans-serif'],
+          },
+        },
+      },
     }
   </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+   <style>
+    html {
+    scroll-behavior: smooth;
+     }
+    /* Custom scrollbar for dark theme */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1f2937; /* Tailwind gray-800 */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #4f46e5; /* Indigo-600 */
+      border-radius: 4px;
+    }
+    /* Glassmorphism card */
+    .glass-card {
+      background: rgba(255 255 255 / 0.12);
+      backdrop-filter: blur(30px);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      border-radius: 1rem;
+      border: 1px solid rgba(255 255 255 / 0.18);
+    }
+  </style>
+  <meta name="description" content="Venkat Vineeth Ram Kumar Nayakanti — Software Engineer Portfolio">
+  <meta name="keywords" content="Software Engineer, Data Engineer, Python, Java, SQL, AWS, Azure, Portfolio">
+  <meta name="author" content="Venkat Vineeth Ram Kumar Nayakanti">
+  
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body class="bg-gray-900 text-gray-100 font-sans selection:bg-indigo-500 selection:text-white">
   <!-- Navbar -->
-  <header class="sticky top-0 z-50 bg-glass backdrop-blur-xl shadow-lg p-4 flex justify-between items-center">
-    <h1 class="text-xl font-bold">Vineeth</h1>
-    <nav class="space-x-4">
-      <a href="#about" class="hover:text-blue-400">About</a>
-      <a href="#projects" class="hover:text-blue-400">Projects</a>
-      <a href="#skills" class="hover:text-blue-400">Skills</a>
-      <a href="#contact" class="hover:text-blue-400">Contact</a>
+  <header class="sticky top-0 z-50 bg-glassLight backdrop-blur-xl shadow-glass p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-extrabold tracking-wide text-indigo-400 cursor-default">Vineeth</h1>
+    <nav class="space-x-6 text-gray-300 font-medium">
+      <a href="#about" class="hover:text-indigo-400 transition-colors duration-300">About</a>
+      <a href="#projects" class="hover:text-indigo-400 transition-colors duration-300">Projects</a>
+      <a href="#skills" class="hover:text-indigo-400 transition-colors duration-300">Skills</a>
+      <a href="#contact" class="hover:text-indigo-400 transition-colors duration-300">Contact</a>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="min-h-screen flex items-center justify-center text-center p-6" id="hero">
-    <div>
-      <h2 class="text-4xl md:text-6xl font-bold mb-4">Venkat Vineeth Ram Kumar Nayakanti</h2>
-      <p class="text-xl md:text-2xl text-blue-300">Software Engineer</p>
+  <section class="min-h-screen flex flex-col md:flex-row items-center justify-center gap-12 px-6 py-12 max-w-6xl mx-auto" id="hero">
+    <div class="w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-indigo-500 shadow-glass">
+      <img src="IMG_6969.jpg" alt="Venkat Vineeth Ram Kumar Nayakanti" class="object-cover w-full h-full" />
+    </div>
+    <div class="text-center md:text-left max-w-xl">
+      <h2 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4 text-indigo-400">Venkat Vineeth Ram Kumar Nayakanti</h2>
+      <p class="text-2xl md:text-3xl font-semibold text-gray-300">Software Engineer | Data Engineer</p>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="p-8 max-w-4xl mx-auto" id="about">
-    <h3 class="text-3xl font-semibold mb-4">About Me</h3>
-    <p class="text-lg leading-relaxed text-gray-300">
-      I’m a Software Engineer with hands-on experience developing scalable backend systems and data pipelines. I specialize in Python, Java, SQL, and cloud-native technologies like AWS and Azure. I’ve built enterprise applications, optimized ETL workflows, and contributed to high-impact projects at companies like Kalven Technologies and EPAM Systems. I’m passionate about clean code, automation, and transforming data into actionable insights.
-    </p>
-  </section>
+  
+ <!-- About Section -->
+ <section id="about" class="max-w-4xl mx-auto p-8 glass-card my-12">
+  <h3 class="text-3xl font-semibold mb-6 border-b border-indigo-400 pb-2">About Me</h3>
+  <p class="text-lg leading-relaxed text-gray-300">
+    I’m a Software Engineer with hands-on experience developing scalable backend systems and data pipelines. I specialize in Python, Java, SQL, and cloud-native technologies like AWS and Azure. I’ve built enterprise applications, optimized ETL workflows, and contributed to high-impact projects at companies like Kalven Technologies and EPAM Systems. I’m passionate about clean code, automation, and transforming data into actionable insights.
+  </p>
+</section>
 
-  <!-- Projects Section -->
-  <section class="p-8 max-w-6xl mx-auto" id="projects">
-    <h3 class="text-3xl font-semibold mb-6">Projects</h3>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-glass backdrop-blur-xl p-6 rounded-xl border border-gray-700 shadow-lg">
-        <h4 class="text-xl font-bold mb-2">Home Credit Default Risk Prediction and Analysis</h4>
-        <a href="#" class="text-blue-400 hover:underline">GitHub</a>
-        <p class="text-gray-300 mt-2">This project’s purpose is to anticipate if a client will repay a loan.</p>
-        <ul class="text-gray-400 list-disc list-inside">
-          <li>Used classification algorithms like SVMs, Decision Trees, AdaBoost, XGBoost.</li>
-          <li>Evaluated models using Accuracy, Precision, F1 Score, ROC AUC.</li>
-          <li>Built models using PyTorch: 1-NN, 2-NN, and MLP with different loss functions.</li>
-        </ul>
+<section id="experience" class="max-w-4xl mx-auto p-8 glass-card my-12">
+        <h2 class="text-3xl font-semibold mb-8 border-b border-gray-600 pb-2">Experience</h2>
+        <div class="relative border-l-2 border-indigo-400 ml-4 space-y-12">
+      
+          <!-- Kalven Technologies -->
+          <div class="mb-10 ml-6">
+            <span class="absolute -left-3 flex items-center justify-center w-7 h-7 bg-purple-600 rounded-full ring-8 ring-black text-white font-bold">2024-2025</span>
+            <h3 class="text-xl font-semibold text-purple-400">Software Engineer Intern</h3>
+            <p class="text-gray-400 italic">Kalven Technologies — Jul 2024 - Apr 2025</p>
+            <ul class="list-disc list-inside space-y-1 mt-2">
+              <li>Developed enterprise-level Java applications using Spring Boot and Hibernate, focusing on performance, scalability, and maintainability.</li>
+              <li>Implemented RESTful APIs and integrated them with frontend components, enabling seamless interaction and data flow across modules.</li>
+              <li>Created automated unit and integration tests using JUnit and Mockito, increasing test coverage by over 85% and reducing manual QA cycles.</li>
+              <li>Automated critical user flows and regression scenarios with Selenium and Cucumber, reducing manual testing effort by over 60%.</li>
+              <li>Managed CI/CD pipelines using Jenkins to enable automated builds and testing, improving deployment reliability and development speed.</li>
+              <li>Collaborated with cross-functional teams to gather requirements, troubleshoot issues, and ensure timely delivery of project milestones, improving project efficiency.</li>
+              <li>Contributed to code reviews and enforced best practices for clean code, modular design, and test-driven development (TDD), leading to enhanced code quality and maintainability.</li>
+            </ul>
+          </div>
+      
+          <!-- Indiana University -->
+          <div class="mb-10 ml-6">
+            <span class="absolute -left-3 flex items-center justify-center w-7 h-7 bg-pink-600 rounded-full ring-8 ring-black text-white font-bold">2023-2024</span>
+            <h3 class="text-xl font-semibold text-pink-400">Software Developer</h3>
+            <p class="text-gray-400 italic">Indiana University — Jul 2023 - May 2024</p>
+            <ul class="list-disc list-inside space-y-1 mt-2">
+              <li>Streamlined workflows by designing Python scripts to automate repetitive data processing tasks, improving accuracy and efficiency.</li>
+              <li>Developed and optimized data transformation pipelines for large-scale datasets using Apache Spark and Hadoop, ensuring scalability and performance.</li>
+              <li>Applied machine learning techniques, including classification algorithms (SVMs, Decision Trees, XGBoost), to solve predictive modeling problems and improve decision-making.</li>
+              <li>Engineered models using metrics such as Accuracy, Precision Score, F1 Score, and ROC AUC score to validate performance and support analytical insights.</li>
+              <li>Conducted extensive testing including Functional Testing, Feature Importance Testing, and Edge Case Testing to ensure model robustness.</li>
+              <li>Integrated RESTful APIs for data ingestion and communication across varied platforms to streamline data interaction.</li>
+            </ul>
+          </div>
+      
+          <!-- EPAM Systems -->
+          <div class="mb-10 ml-6">
+            <span class="absolute -left-3 flex items-center justify-center w-7 h-7 bg-blue-600 rounded-full ring-8 ring-black text-white font-bold">2021-2022</span>
+            <h3 class="text-xl font-semibold text-blue-400">Data Engineer</h3>
+            <p class="text-gray-400 italic">EPAM Systems — May 2021 - Jul 2022</p>
+            <ul class="list-disc list-inside space-y-1 mt-2">
+              <li>Developed PySpark code to execute ETL jobs for healthcare data, aligning with complex business requirements and enhancing data pipeline development.</li>
+              <li>Introduced and integrated Redshift to automate schema change detection in datasets exceeding 15M records, streamlining daily data flow and saving 5 work hours per week per teammate.</li>
+              <li>Transformed raw data into refined layers using PySpark for ETL processes, ensuring data readiness for analytics and informed decision-making.</li>
+              <li>Maintained and optimized automated data flows using Jenkins and Airflow DAGs, ensuring efficient pipeline management and performance reliability.</li>
+              <li>Earned the Delivery Excellence award for consistent high-level performance in providing innovative ETL solutions and improving system efficiency by 70%.</li>
+              <li>Utilized PyUnit for comprehensive testing of ETL pipelines to guarantee robust functionality and reliability.</li>
+            </ul>
+          </div>
+      
+          <!-- Wiley India -->
+          <div class="mb-10 ml-6">
+            <span class="absolute -left-3 flex items-center justify-center w-7 h-7 bg-green-600 rounded-full ring-8 ring-black text-white font-bold">2021</span>
+            <h3 class="text-xl font-semibold text-green-400">Java Developer</h3>
+            <p class="text-gray-400 italic">Wiley India — Jan 2021 - May 2021</p>
+            <ul class="list-disc list-inside space-y-1 mt-2">
+              <li>Developed stand-alone Java projects leveraging Spring and SQL to build robust backend solutions.</li>
+              <li>Collaborated with team members using Git for version control to manage modifications, assign tasks, and streamline code updates.</li>
+              <li>Implemented REST APIs performing CRUD operations, enabling efficient data management and interaction in various applications.</li>
+            </ul>
+          </div>
+      
+        </div>
+      </section>
+      <section id="education" class="max-w-4xl mx-auto p-8 glass-card my-12">
+      <div class="relative border-l border-gray-600 ml-4">
+      <!-- Education Heading -->
+      <h2 class="text-3xl font-semibold mb-8 border-b border-gray-600 pb-2">Education</h2>
+      <!-- <h3 class="text-2xl font-semibold text-white mb-6 mt-12">Education</h3> -->
+      
+      <!-- MS Computer Science -->
+      <div class="mb-8 ml-6 relative">
+        <span class="absolute -left-5 top-1 w-4 h-4 bg-purple-500 rounded-full border-2 border-gray-900"></span>
+        <h4 class="text-lg font-bold text-purple-400">Master of Science, Computer Science</h4>
+        <span class="text-sm text-gray-400">Indiana University Bloomington (Aug 2022 - May 2024)</span>
       </div>
-      <div class="bg-glass backdrop-blur-xl p-6 rounded-xl border border-gray-700 shadow-lg">
-        <h4 class="text-xl font-bold mb-2">Emojify - Face Emotion Recognition</h4>
-        <a href="#" class="text-blue-400 hover:underline">GitHub</a>
-        <p class="text-gray-300 mt-2">Engineered a system that extracts facial features in real-time and maps them to emojis.</p>
-        <ul class="text-gray-400 list-disc list-inside">
-          <li>Built a 13-layer CNN using Keras to train emotion recognition.</li>
-          <li>Integrated into The Portal Sleuth project for emotion-based website ratings.</li>
-          <li>Used OpenCV for real-time image capture and testing.</li>
-        </ul>
-      </div>
-      <div class="bg-glass backdrop-blur-xl p-6 rounded-xl border border-gray-700 shadow-lg">
-        <h4 class="text-xl font-bold mb-2">The Portal Sleuth</h4>
-        <a href="#" class="text-blue-400 hover:underline">GitHub</a>
-        <p class="text-gray-300 mt-2">Django-based web app that evaluates website genuineness using user reviews.</p>
-        <ul class="text-gray-400 list-disc list-inside">
-          <li>Used RAKE NLTK to extract key phrases from user reviews.</li>
-          <li>Developed full-stack functionality with Django and custom evaluation logic.</li>
-        </ul>
+      
+      <!-- Bachelor Engineering -->
+      <div class="mb-8 ml-6 relative">
+        <span class="absolute -left-5 top-1 w-4 h-4 bg-purple-500 rounded-full border-2 border-gray-900"></span>
+        <h4 class="text-lg font-bold text-purple-400">Bachelor of Engineering, Information Technology</h4>
+        <span class="text-sm text-gray-400">Osmania University (Jul 2017 - Jul 2021)</span>
       </div>
     </div>
-  </section>
+    </section>
+    
+    <section id="projects" class="max-w-4xl mx-auto p-8 glass-card my-12"> 
+      <h2 class="text-3xl font-semibold mb-8 border-b border-indigo-400 pb-2">Projects</h2> 
+      <div class="space-y-8"> <!-- Home Credit Default Risk Prediction and Analysis--> 
+        <a href="https://github.com/vineethn7/HomeCreditDefaultRisk" target="_blank" class="inline-block text-indigo-300 hover:text-indigo-500 font-semibold"><div class="bg-glass rounded-lg p-6 shadow-glass transition-transform hover:scale-[1.03] hover:shadow-indigo-500/50"> 
+              <h3 class="text-2xl font-bold text-indigo-400 mb-2">Home Credit Default Risk Prediction and Analysis</h3> 
+              <p class="text-gray-300 mb-3">This project’s purpose is to anticipate if a client will repay a loan. Used classification algorithms like SVMs, Decision Trees, AdaBoost, XGBoost.</p> 
+              <p class="text-gray-400 mb-3">Evaluated models using Accuracy, Precision, F1 Score, ROC AUC. Built models using PyTorch: 1-NN, 2-NN, and MLP with different loss functions.</p> 
+          </div>
+        </a> 
+          <!--Emojify - Face Emotion Recognition --> 
+          <a href="https://github.com/vineethn7/Emojify" target="_blank" class="inline-block text-indigo-300 hover:text-indigo-500 font-semibold"><div class="bg-glass rounded-lg p-6 shadow-glass transition-transform hover:scale-[1.03] hover:shadow-indigo-500/50"> 
+              <h3 class="text-2xl font-bold text-indigo-400 mb-2">Emojify - Face Emotion Recognition</h3> 
+              <p class="text-gray-300 mb-3">Engineered a system that extracts facial features in real-time and maps them to emojis. Built a 13-layer CNN using Keras to train emotion recognition.</p>
+              <p class="text-gray-400 mb-3">Integrated into The Portal Sleuth project for emotion-based website ratings. Used OpenCV for real-time image capture and testing.</p> 
+          </div> 
+        </a>
+          <!-- Project 3 --> 
+           <a href="https://github.com/vineethn7/ThePortalSleuth" target="_blank" class="inline-block text-indigo-300 hover:text-indigo-500 font-semibold"><div class="bg-glass rounded-lg p-6 shadow-glass transition-transform hover:scale-[1.03] hover:shadow-indigo-500/50"> 
+              <h3 class="text-2xl font-bold text-indigo-400 mb-2">The Portal Sleuth</h3> 
+              <p class="text-gray-300 mb-3">Django-based web app that evaluates website genuineness using user reviews.</p> 
+              <p class="text-gray-400 mb-3">Used RAKE NLTK to extract key phrases from user reviews. Developed full-stack functionality with Django and custom evaluation logic.</p> 
+               
+          </div> </a>
+      </div> 
+  </section> 
 
   <!-- Skills Section -->
-  <section class="p-8 max-w-6xl mx-auto" id="skills">
-    <h3 class="text-3xl font-semibold mb-6">Skills</h3>
+  <section id="skills" class="max-w-4xl mx-auto p-6 my-12 bg-black bg-opacity-40 rounded-xl backdrop-blur-md text-gray-200">
+    <h2 class="text-3xl font-semibold mb-8 border-b border-gray-600 pb-2">Skills</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-      <span class="bg-gradient-to-br from-purple-500 to-pink-500 text-white font-semibold p-4 rounded-lg shadow-lg">Python</span>
-      <span class="bg-gradient-to-br from-yellow-400 to-orange-500 text-white font-semibold p-4 rounded-lg shadow-lg">Java</span>
-      <span class="bg-gradient-to-br from-green-400 to-teal-500 text-white font-semibold p-4 rounded-lg shadow-lg">SQL</span>
-      <span class="bg-glass p-4 rounded-lg border border-gray-700">React</span>
-      <span class="bg-glass p-4 rounded-lg border border-gray-700">Spring</span>
-      <span class="bg-gradient-to-br from-blue-400 to-cyan-500 text-white font-semibold p-4 rounded-lg shadow-lg">PySpark</span>
-      <span class="bg-gradient-to-br from-red-400 to-pink-600 text-white font-semibold p-4 rounded-lg shadow-lg">Airflow</span>
-      <span class="bg-glass p-4 rounded-lg border border-gray-700">Docker</span>
-      <span class="bg-glass p-4 rounded-lg border border-gray-700">AWS</span>
-      <span class="bg-glass p-4 rounded-lg border border-gray-700">Azure</span>
-      <span class="bg-glass p-4 rounded-lg border border-gray-700">C++</span>
-      <span class="bg-glass p-4 rounded-lg border border-gray-700">JavaScript</span>
+      <!-- Highlighted Python & Big Data skills -->
+      <span class="skill-badge bg-gradient-to-br from-purple-500 to-pink-600 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(171,0,255,0.9)] cursor-pointer">Python</span>
+      <span class="skill-badge bg-gradient-to-br from-indigo-500 to-blue-600 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(30,144,255,0.9)] cursor-pointer">PySpark</span>
+      <span class="skill-badge bg-gradient-to-br from-teal-400 to-cyan-600 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(64,224,208,0.9)] cursor-pointer">Hadoop</span>
+      <span class="skill-badge bg-gradient-to-br from-green-400 to-lime-600 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(124,252,0,0.9)] cursor-pointer">Spark</span>
+      <span class="skill-badge bg-gradient-to-br from-purple-600 to-indigo-700 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(138,43,226,0.9)] cursor-pointer">SQL</span>
+      <span class="skill-badge bg-gradient-to-br from-purple-700 to-blue-800 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(72,61,139,0.9)] cursor-pointer">PL/SQL</span>
+      
+      <!-- Other programming languages -->
+      <span class="skill-badge bg-gradient-to-br from-yellow-400 to-orange-500 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(255,165,0,0.8)] cursor-pointer">Java</span>
+      <span class="skill-badge bg-gradient-to-br from-pink-500 to-red-600 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(255,69,0,0.8)] cursor-pointer">JavaScript</span>
+      <span class="skill-badge bg-gradient-to-br from-gray-600 to-gray-800 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(105,105,105,0.8)] cursor-pointer">C</span>
+      <span class="skill-badge bg-gradient-to-br from-gray-700 to-gray-900 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(47,79,79,0.8)] cursor-pointer">C++</span>
+      
+      <!-- Frameworks & Tools -->
+      <span class="skill-badge bg-gradient-to-br from-purple-500 to-pink-600 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(199,21,133,0.8)] cursor-pointer">Django</span>
+      <span class="skill-badge bg-gradient-to-br from-purple-700 to-indigo-900 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(75,0,130,0.8)] cursor-pointer">Flask</span>
+      <span class="skill-badge bg-gradient-to-br from-red-500 to-pink-600 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(220,20,60,0.8)] cursor-pointer">React</span>
+      <span class="skill-badge bg-gradient-to-br from-yellow-600 to-red-700 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(255,69,0,0.8)] cursor-pointer">Angular</span>
+      <span class="skill-badge bg-gradient-to-br from-green-500 to-teal-700 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(0,128,128,0.8)] cursor-pointer">Spring</span>
+      <span class="skill-badge bg-gradient-to-br from-blue-700 to-indigo-900 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(25,25,112,0.8)] cursor-pointer">Hibernate</span>
+  
+      <!-- Cloud & DevOps -->
+      <span class="skill-badge bg-gradient-to-br from-blue-500 to-cyan-700 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(0,191,255,0.8)] cursor-pointer">AWS</span>
+      <span class="skill-badge bg-gradient-to-br from-purple-500 to-indigo-700 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(138,43,226,0.8)] cursor-pointer">Azure</span>
+      <span class="skill-badge bg-gradient-to-br from-gray-600 to-gray-800 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(112,128,144,0.8)] cursor-pointer">Docker</span>
+      <span class="skill-badge bg-gradient-to-br from-orange-500 to-yellow-600 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(255,140,0,0.8)] cursor-pointer">Jenkins</span>
+      <span class="skill-badge bg-gradient-to-br from-pink-500 to-purple-600 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(199,21,133,0.8)] cursor-pointer">Airflow</span>
+      <span class="skill-badge bg-gradient-to-br from-blue-400 to-indigo-700 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(65,105,225,0.8)] cursor-pointer">GitHub</span>
+  
+      <!-- Web -->
+      <span class="skill-badge bg-gradient-to-br from-yellow-400 to-pink-500 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(255,105,180,0.8)] cursor-pointer">HTML</span>
+      <span class="skill-badge bg-gradient-to-br from-cyan-400 to-blue-500 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(0,206,209,0.8)] cursor-pointer">CSS</span>
+      <span class="skill-badge bg-gradient-to-br from-pink-400 to-purple-600 text-white font-semibold p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(218,112,214,0.8)] cursor-pointer">JavaScript</span>
+      
     </div>
   </section>
+  
 
-  <!-- Contact Section -->
-  <section class="p-8 max-w-4xl mx-auto" id="contact">
-    <h3 class="text-3xl font-semibold mb-4">Contact</h3>
-    <p class="text-gray-300 mb-2">Email: <a href="mailto:vineeth.nayakanti@gmail.com" class="text-blue-400 hover:underline">vineeth.nayakanti@gmail.com</a></p>
-    <p class="text-gray-300 mb-2">GitHub: <a href="https://github.com/vineethn7" class="text-blue-400 hover:underline" target="_blank">github.com/vineethn7</a></p>
-    <p class="text-gray-300">LinkedIn: <a href="https://www.linkedin.com/in/vineethn7/" class="text-blue-400 hover:underline" target="_blank">linkedin.com/in/vineethn7</a></p>
-  </section>
+ <!-- Contact Section -->
+<section id="contact" class="max-w-4xl mx-auto p-8 glass-card my-12">
+  <h2 class="text-3xl font-semibold mb-8 border-b border-indigo-400 pb-2 text-white">Contact Me</h2>
+  <p class="mb-6 text-gray-300">
+    Feel free to reach out via email or connect with me on LinkedIn and GitHub.
+  </p>
+  <div class="flex space-x-6 text-indigo-400 text-2xl">
+    <a href="mailto:vineeth.nayakanti@gmail.com" aria-label="Email" class="hover:text-indigo-600">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/vineethn7/" target="_blank" aria-label="LinkedIn" class="hover:text-indigo-600">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/vineethn7" target="_blank" aria-label="GitHub" class="hover:text-indigo-600">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</section>
 
-  <footer class="text-center text-gray-500 py-4 mt-8 border-t border-gray-700">
-    &copy; 2025 Vineeth. All rights reserved.
-  </footer>
+
+  <footer class="text-center text-gray-500 p-6 text-sm select-none"> 
+    &copy; 2025 Venkat Vineeth Ram Kumar Nayakanti. All rights reserved. 
+</footer> 
 </body>
 </html>
